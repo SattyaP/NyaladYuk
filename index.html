@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
 </head>
 
 <body>
@@ -31,7 +32,7 @@
     </div>
 
     <!-- Navbar -->
-    <nav class="bg-nav">
+    <nav class="bg-nav sticky-top">
         <div class="container d-flex justify-content-between">
             <ul class="sponsor">
                 <li>#NYARISPONSOR</li>
@@ -42,13 +43,13 @@
                 </a>
             </ul>
             <ul class="link">
-                <a href="#">
+                <a href="#about">
                     <li class="active">About</li>
                 </a>
-                <a href="#">
+                <a href="#products">
                     <li>Product</li>
                 </a>
-                <a href="#">
+                <a href="#contacts">
                     <li>Contact</li>
                 </a>
             </ul>
@@ -57,8 +58,8 @@
 
     <!-- Banner -->
     <div class="container banner">
-        <img class="img-fluid" src="img/banner.jpg" alt="banner">
-        <img class="img-fluid" src="img/banner.jpg" alt="banner">
+        <img class="img-fluid" src="img/banner1.png" alt="banner">
+        <img class="img-fluid" src="img/banner1.png" alt="banner">
     </div>
 
     <!-- Pilihan ukuran -->
@@ -67,31 +68,31 @@
 
         <div class="row mt-4">
             <div class="col-lg-2 ">
-                <a class="size" href="">
+                <a class="size" href="#">
                     <img class="img-fluid" src="img/icon-salad.png" alt="size-salad">
                     <h4>Small Cup</h4>
                 </a>
             </div>
             <div class="col-lg-2 ">
-                <a class="size" href="">
+                <a class="size" href="#">
                     <img class="img-fluid" src="img/icon-salad.png" alt="size-salad">
                     <h4>Medium Cup</h4>
                 </a>
             </div>
             <div class="col-lg-2 ">
-                <a class="size" href="">
+                <a class="size" href="#">
                     <img class="img-fluid" src="img/icon-salad.png" alt="size-salad">
                     <h4>Big Cup</h4>
                 </a>
             </div>
             <div class="col-lg-2 ">
-                <a class="size" href="">
+                <a class="size" href="#">
                     <img class="img-fluid" src="img/icon-salad.png" alt="size-salad">
                     <h4>Very Big Cup</h4>
                 </a>
             </div>
             <div class="col-lg-2 ">
-                <a class="size" href="">
+                <a class="size" href="#">
                     <img class="img-fluid" src="img/icon-salad.png" alt="size-salad">
                     <h4>Custom Cup</h4>
                 </a>
@@ -105,15 +106,15 @@
     </div>
 
     <!-- Penjelasan -->
-    <div class="penjelasan">
-        <div class="container mt-5 pt-5">
+    <div id="about" class="penjelasan mt-5">
+        <div class="container p-4">
             <div class="row">
                 <div class="col-lg-6">
                     <h5>Apa itu NyaladYuk ?</h5>
                     <p>Sedikit penjelasan mengenai product kami</p>
                 </div>
                 <div class="col-lg-6">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                         but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -122,6 +123,158 @@
         </div>
     </div>
 
+    <!-- Highlight procuct -->
+    <div id="products" class="container product">
+        <h5>SIZE MENU <span id="shape" style="color: #08c84f;">SALAD</span></h4>
+        <p>Berbagai ukuran product salad yang dapat anda nikmati</p>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <a style="text-decoration: none;" href="">
+                    <div class="card-product">
+                        <img class="img-fluid" src="./img/salad1.png" alt="product">
+                        <h4>SALAD SMALL SIZE</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a style="text-decoration: none;" href="">
+                    <div class="card-product">
+                        <img class="img-fluid" src="./img/salad2.png" alt="product">
+                        <h4>SALAD medium SIZE</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a style="text-decoration: none;" href="">
+                    <div class="card-product">
+                        <img class="img-fluid" src="./img/salad3.png" alt="product">
+                        <h4>SALAD big SIZE</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <a style="text-decoration: none;" href="">
+                    <div class="card-product">
+                        <img class="img-fluid" src="./img/salad4.png" alt="product">
+                        <h4>SALAD verybig SIZE</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hr-om my-5"></div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="container why">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-fluid why-pict" src="./img/why-pict.png" alt="why-pict">
+            </div>
+            <div class="col-lg-6">
+                <h5>kenapa <span style="color: #08c84f;">nyalad</span> yuk ?</h5>
+                <p class="mnft">Berikut Manfaat Salad dari Kami</p>
+                <div class="row-why">
+                    <p><img class="img-fluid ceklis" src="/img/ceklis.png" alt=""><span id="text-meme">Sehat Untuk Tubuh</span></p>
+                    <p><img class="img-fluid ceklis" src="/img/ceklis.png" alt=""><span id="text-meme">Bagus untuk tumbuh kembang anak</span></p>
+                    <p><img class="img-fluid ceklis" src="/img/ceklis.png" alt=""><span id="text-meme">Dapat dikonsumsi untuk segala umur</span></p>
+                    <p><img class="img-fluid ceklis" src="/img/ceklis.png" alt=""><span id="text-meme">Harga yang sangat terjangkau</span></p>
+                    <p><img class="img-fluid ceklis" src="/img/ceklis.png" alt=""><span id="text-meme">Kualitas buah yang selalu diperhatikan kesegarannya</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>The Story of Nyalad Yuk</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci id labore culpa blanditiis consequuntur aut molestias sequi fuga ex! Iure quibusdam quasi corporis incidunt sed rerum ex assumenda fugiat quos rem? Error hic reiciendis inventore mollitia recusandae quam, perferendis ad culpa sit, minus adipisci aut officia ex labore soluta?</p>
+                    <a href="">Lihat Selengkapnya</a>
+                </div>
+                <div class="col-lg-6">
+                   <img class="img-fluid" src="./img/story.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latar Belakang -->
+    <div class="container latar">
+        <h5>Latar Belakang <span style="color: #08c84f;">Nyalad Yuk</span></h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ipsum, nostrum nemo delectus, suscipit officiis, omnis illo fugiat sapiente vel voluptatem hic porro. Nobis aut esse animi corporis libero praesentium pariatur harum ad vitae. Voluptas culpa beatae provident adipisci ipsam eius sequi natus laudantium, velit tempora harum est corrupti delectus, voluptate consequatur. Fuga delectus saepe fugit magni, nesciunt rerum modi consectetur a reiciendis iusto sint dolor optio praesentium, nulla illo similique velit possimus quam beatae reprehenderit ea ratione! Harum ad facere cum, error repudiandae quaerat et enim iure tenetur hic vero explicabo nulla quos numquam. Fuga molestiae eaque exercitationem velit culpa ipsum magnam nostrum fugit non autem molestias nihil labore sit suscipit ut voluptatem minima, sunt dolore commodi. Minima sint perferendis culpa illo incidunt nisi, dicta voluptate in? Dolore quae esse mollitia quod autem numquam doloremque, et minima ipsum rerum, voluptas inventore corrupti dolores unde suscipit repellendus tenetur, non culpa. Rerum facere, tempora sed, excepturi consectetur iusto possimus hic delectus soluta blanditiis sequi, suscipit itaque voluptas aspernatur odit esse et numquam ducimus non mollitia accusantium temporibus odio quo saepe. Odio harum quasi reprehenderit voluptas iure aut animi nulla deserunt at dolores minima ipsam, provident modi doloremque quod rerum rem sit facilis nemo commodi aliquid officia. Vel veniam officiis iure fugit sed maiores, nam consectetur aliquid obcaecati veritatis exercitationem incidunt dolorum totam magnam facilis molestias tempora, deleniti, quaerat culpa cumque hic voluptate saepe. Pariatur corrupti ab voluptates esse iste, repellat ea facilis ipsa perferendis! Voluptatum magnam obcaecati soluta! Rem, maiores itaque!</p>
+
+        <h5 class="mt-4">Latar Belakang <span style="color: #08c84f;">Adain Fresh Food</span></h5>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, eaque! Eveniet laboriosam, hic excepturi itaque iste maiores distinctio similique tempora ut enim quod molestias quam fugit, dolorem quo! Voluptas beatae neque quasi ut iusto, nemo suscipit cupiditate omnis totam facilis ipsam quis sapiente id. Suscipit blanditiis neque debitis dolores veniam libero accusamus sunt laboriosam officiis, cum repellat est, ipsa mollitia ipsum voluptatem, non fugiat quam esse at voluptatibus saepe minima quae illum. Cum temporibus officia dolorum alias exercitationem, velit, perferendis dolores sunt doloribus, officiis ipsa libero quibusdam nostrum inventore laboriosam sed unde quos! Animi dolorem itaque amet consectetur optio illo libero rerum. Reprehenderit culpa illo iure ut molestias corrupti at hic tempore! Iusto incidunt saepe asperiores. Inventore error doloremque, dicta minus delectus officiis iusto libero aliquam accusamus voluptate eaque ea tempore optio modi mollitia nihil nostrum neque praesentium cupiditate assumenda dolor. Saepe repudiandae unde tempora? Vitae, esse expedita magni maxime cumque quod libero molestiae quae eveniet ex accusantium architecto officiis, exercitationem quas eum id deleniti ea temporibus aut omnis excepturi. Mollitia reprehenderit culpa earum deleniti blanditiis! Accusantium aperiam, officia nemo quas hic possimus rem porro qui quod repudiandae quis non iusto repellendus voluptatem error deserunt dolorum optio corporis quaerat amet. Voluptate quae sed, voluptatem unde neque aut fugiat debitis blanditiis, illo obcaecati eum recusandae earum porro molestias distinctio error at corrupti voluptatum, temporibus excepturi? Soluta magnam alias ratione recusandae, architecto sint autem quasi itaque, mollitia harum nobis officia eaque quam sapiente laborum tempora reprehenderit quidem praesentium maiores ab commodi dicta.</p>
+    </div>
+
+    <div class="bg-green">
+    <!-- Contact -->
+    <div id="contacts" class="contact pt-5 pb-4">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Have a question for us?</h5>
+                    <p>Silahkan kirimkan pesan dan kritik anda sehingga kami dapat memperbaiki dan meningkatkan kualitas kami</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex">
+                        <input class="form-control" type="text" placeholder="masukan pesan anda">
+                        <a class="btn-contact" href="">Send</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="hr-om1 my-5"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer p-5">
+        <div class="container">
+            <h5>Nyalad<span style="color: #08c84f;">.Yuk</span></h5>
+
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-6">
+                    <h3>PT. Adain Fresh Food</h3>
+                    <ul class="list-unstyled">
+                        <li class="mt-2">info@nyaladyuk.com</li>
+                        <li class="mt-2">Jl. Piranha Atas Gang 4B No 144D Lowokwaru, Tunjunsekar, Malang, Indonesia, 65142</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <h4>Corporate</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Website</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <h4>Product</h4>
+                    <ul class="list-unstyled">
+                        <a href="">
+                            <li>Size Menu</li>
+                        </a>
+                        <a href="">
+                            <li>Menu</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <a href="https://wa.me/085607152120" class="float" target="_blank">

@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ecf7e1 !important;
 }
 
 .bg-nav {
@@ -13,6 +20,7 @@
     box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
     position: sticky;
     backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .bg-nav a {
@@ -132,6 +140,10 @@
     margin: 12px 0 0 30px;
 }
 
+.pilihan h4 {
+    font-weight: 500;
+}
+
 .size {
     border: 1px solid rgb(184, 184, 184);
     padding: 10px;
@@ -142,7 +154,7 @@
 }
 
 .size:hover {
-    background-color: #eeeeee;
+    background-color: #ececec;
 }
 
 .size img {
@@ -227,12 +239,245 @@
 }
 
 .penjelasan h5{
-    margin-top: 40px;
     font-weight: 800;
     font-size: 32px;
     color: #25d366;
+    margin-top: 40px;
 }
 
 .penjelasan p {
+    color: #cacaca;
+    font-weight: 300;
+}
+
+.product {
+    margin-top: 80px;
+}
+
+.product h5 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.product p {
+    text-align: center;
+    color: #505050;
+    font-weight: 400;
+}
+
+.card-product {
+    margin-top: 40px;
+    width: 100%;
+    height: 250px;
+}
+
+.card-product:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transition: 0.5s ease all;
+}
+.card-product img {
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    display: block;
+    padding: 30px;
+}
+
+.card-product h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #222;
+}
+
+.why {
+    margin-top: 80px;
+}
+
+.why h5 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222;
+}
+
+.why-pict {
+    width: 435px;
+    margin: auto;
+    display: block;
+    background-image: none;
+}
+
+.row-why {
+    margin-top: 20px;
+}
+
+.mnft {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.ceklis{
+    width: 25px !important;
+    margin-top: -5px;
+}
+
+#text-meme{
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.hr-om {
+    border: 1px solid rgb(126, 126, 126);
+
+    justify-content: center;
+    margin: auto;
+
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.hr-om1 {
+    border: 1px solid rgb(255, 255, 255);
+
+    justify-content: center;
+    margin: auto;
+
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+#shape {
+    /* background-color: #222; */
+    border: 2px solid #08c84f;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.story {
+    background-color: #222;
+    margin-top: 100px;
+}
+
+.story h5 {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.story p {
+    color: #c7c7c7;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.story a {
+    background-color: #08c84f;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.story a:hover {
+    color: #222;
+}
+
+.story img {
+    width: 100%;    
+}
+
+.latar {
+    margin-top: 100px;
+}
+
+.latar h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.latar p {
+    color: #505050;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.bg-green {
+    background: rgb(34,34,34);
+    background: linear-gradient(315deg, rgba(34,34,34,1) 0%, rgba(8,200,79,1) 100%);
+    margin-top: 50px;
+    }
+
+.contact h5 {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.contact p {
+    color: #ecf7e1;
+    font-weight: 300;
+}
+
+.contact input {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.btn-contact {
+    margin-top: 30px;
+    background-color: #08c84f;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-contact:hover {
+    color: #ecf7e1;
+}
+
+.footer h5 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.footer li {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer h4 {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer ul a li:hover{
     color: #cacaca;
 }
