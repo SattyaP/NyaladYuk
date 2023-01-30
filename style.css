@@ -1,13 +1,13 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -76,7 +76,6 @@ body {
     animation: appear 0.2s linear;
 }
 
-
 @keyframes appear {
     from {
         width: 0;
@@ -99,11 +98,12 @@ body {
     margin-bottom: -60px;
 }
 
-.loading-wait>img {
+.loading-wait > img {
     width: 500px;
 }
 
 .loading {
+    z-index: 9999;
     flex-wrap: wrap;
     display: flex;
     position: fixed;
@@ -175,70 +175,74 @@ body {
     display: block;
     text-align: center;
 }
+@keyframes updown {
+    0% {
+        opacity: 0.25;
+        top: -30px;
+    }
 
+    50% {
+        opacity: 1;
+        top: 10px;
+    }
+    100% {
+        opacity: 0.25;
+        top: -30px;
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .scroll img {
     width: 50px;
     position: relative;
-    animation: updown 3s linear infinite;
-    animation-delay: 2s;
-}
-
-@keyframes updown {
-    from {
-        top: -20px;
-    }
-
-    to {
-        top: 20px;
-    }
+    animation: updown 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    /* animation-delay: 2s; */
 }
 
 .scroll h5 {
     margin-top: 20px;
-    animation: fade 3s infinite linear;
-    animation-delay: 2s;
+    animation: fade 3s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    /* animation-delay: 2s; */
+    transition: all ease;
 }
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transition: all ease;
-    }
-    100% {
-        opacity: 1;
-        transition: all ease;
-    }
-}
-
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
 .float:hover {
-    color: #FFF;
+    color: #fff;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+    margin-top: 16px;
 }
 
 .penjelasan {
     background-color: #222;
 }
 
-.penjelasan h5{
+.penjelasan h5 {
     font-weight: 800;
     font-size: 32px;
     color: #25d366;
@@ -319,12 +323,12 @@ body {
     margin-top: 40px;
 }
 
-.ceklis{
+.ceklis {
     width: 25px !important;
     margin-top: -5px;
 }
 
-#text-meme{
+#text-meme {
     font-size: 16px;
     font-weight: 300;
     margin-left: 20px;
@@ -367,7 +371,7 @@ body {
 }
 
 .story h5 {
-    color: #FFF;
+    color: #fff;
     font-weight: 600;
     font-size: 36px;
     margin-top: 30px;
@@ -394,7 +398,7 @@ body {
 }
 
 .story img {
-    width: 100%;    
+    width: 100%;
 }
 
 .latar {
@@ -413,13 +417,13 @@ body {
 }
 
 .bg-green {
-    background: rgb(34,34,34);
-    background: linear-gradient(315deg, rgba(34,34,34,1) 0%, rgba(8,200,79,1) 100%);
+    background: rgb(34, 34, 34);
+    background: linear-gradient(315deg, rgba(34, 34, 34, 1) 0%, rgba(8, 200, 79, 1) 100%);
     margin-top: 50px;
-    }
+}
 
 .contact h5 {
-    color: #FFF;
+    color: #fff;
     font-size: 36px;
     font-weight: 800;
 }
@@ -457,18 +461,18 @@ body {
 .footer h3 {
     font-size: 20px;
     margin-top: 20px;
-    color: #FFF;
+    color: #fff;
     font-weight: 700;
 }
 
 .footer li {
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
     font-weight: 300;
 }
 
 .footer h4 {
-    color: #FFF;
+    color: #fff;
     font-weight: 700;
     font-size: 20px;
     margin-top: 20px;
@@ -478,6 +482,6 @@ body {
     text-decoration: none;
 }
 
-.footer ul a li:hover{
+.footer ul a li:hover {
     color: #cacaca;
 }
